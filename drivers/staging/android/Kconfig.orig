@@ -141,6 +141,8 @@ config KSWAPD_NOSWAP
 	help
 	  This option controls swap action in kswapd
 
+<<<<<<< HEAD
+=======
 config SAMP_HOTNESS
 	bool "Kill hidden process by hotness"
 	default y
@@ -155,6 +157,7 @@ config ANDROID_LMK_ADJ_RBTREE
 	  Use oom_score_adj rbtree to select the best proecss to kill
 	  when system in low memory status.
 
+>>>>>>> cb3ea85... staging: android: lowmemorykiller: implement task's adj rbtree
 endif # if ANDROID
 
 endmenu
