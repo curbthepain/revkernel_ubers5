@@ -169,6 +169,8 @@ choice
 	config DEFAULT_FIOPS
 		bool "FIOPS" if IOSCHED_FIOPS=y
 
+<<<<<<< HEAD
+=======
 	config DEFAULT_SIO
 		bool "SIO" if IOSCHED_SIO=y
 
@@ -180,6 +182,7 @@ choice
 
 	config DEFAULT_FIFO
 		bool "fifo"
+>>>>>>> f86ce45... sched: Add fifo, fiops, sio, vr and zen schedulers
 endchoice
 
 config DEFAULT_IOSCHED
