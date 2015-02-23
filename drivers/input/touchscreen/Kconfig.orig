@@ -1097,6 +1097,8 @@ config TOUCHSCREEN_GT9XX
 
           If unsure, say N.
 
+<<<<<<< HEAD
+=======
 config TOUCHSCREEN_ZINITIX_BT531
 	tristate "ZINITIX BT531 I2C Touchscreen"
 	depends on I2C
@@ -1116,6 +1118,7 @@ config TOUCHBOOST_CONTROL
 	  Boeffla Kernels functionality to control input boost as touch boost
 	  in the Boeffla Config app
 
+>>>>>>> ab71137... cpu-boost: Implement touch boost configuration driver
 source "drivers/input/touchscreen/wacom/Kconfig"
 source "drivers/input/touchscreen/gt9xx/Kconfig"
 source "drivers/input/touchscreen/synaptics/Kconfig"
