@@ -154,6 +154,8 @@ static const char * const qpnp_pon_reason[] = {
 	[7] = "Triggered from KPD (power key press)",
 };
 
+<<<<<<< HEAD
+=======
 static const char * const qpnp_poff_reason[] = {
 	[0] = "Triggered from SOFT (Software)",
 	[1] = "Triggered from PS_HOLD (PS_HOLD/MSM controlled shutdown)",
@@ -176,6 +178,7 @@ static const char * const qpnp_poff_reason[] = {
 
 extern void screenwake_setdev(struct qpnp_pon * pon);
 
+>>>>>>> 57a87db... synaptics_i2c_rmi: Screen wake and sleep functions
 static int
 qpnp_pon_masked_write(struct qpnp_pon *pon, u16 addr, u8 mask, u8 val)
 {
