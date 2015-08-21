@@ -4416,6 +4416,8 @@ config MUIC_RESET_PIN_ENABLE
         help 
                 This request is from H/W team
 		In case of mUIC voltage drop, mUIC will be reset
+<<<<<<< HEAD
+=======
 
 config TERT_MI2S_ENABLE
 	bool "3rd mi2s devices"
@@ -4436,4 +4438,5 @@ config FORCE_FAST_CHARGE
 	  A simple sysfs interface to force adapters that
 	  are detected as USB to charge as AC (1A/h) or to set
 	  custom charging currents for AC and USB.
+>>>>>>> 60ce81b... Added Fast Charge [yank555-lu]
 endif
