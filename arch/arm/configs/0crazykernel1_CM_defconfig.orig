@@ -1,14 +1,14 @@
-CONFIG_LOCALVERSION="-CrazySuperKernel_CM-v1"
-# CONFIG_LOCALVERSION_AUTO is not set
-#
-# Crazy-Kernel1
-#
 # CONFIG_ARM_PATCH_PHYS_VIRT is not set
 CONFIG_EXPERIMENTAL=y
+<<<<<<< HEAD
+CONFIG_KERNEL_LZO=y
+CONFIG_LOCALVERSION="-cyanogenmod"
+=======
 -CONFIG_KERNEL_LZO=y
 # CONFIG_KERNEL_LZO is not set
 CONFIG_SNAPPY_COMPRESS=y
 CONFIG_SNAPPY_DECOMPRESS=y
+>>>>>>> 2cf413b... snappy compress/decompress
 CONFIG_SYSVIPC=y
 # CONFIG_RCU_FAST_NO_HZ is not set
 # CONFIG_IKCONFIG is not set
