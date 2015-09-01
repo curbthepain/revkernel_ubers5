@@ -3,15 +3,15 @@ export KERNELDIR=`readlink -f .`
 export RAMFS_SOURCE="/home/francesco/Crazy-Kernel/Kernel_cm/Ramdisks/ramfs_cm12.1"
 export PARENT_DIR=`readlink -f ..`
 export USE_SEC_FIPS_MODE=true
-export CROSS_COMPILE=/home/francesco/Toolchain/bin/arm-architoolchain-linux-gnueabihf-
+export CROSS_COMPILE=/home/francesco/arm-eabi-6.0/bin/arm-eabi-
 
-# if [ "v1" != "" ];then
-#  export KERNELDIR=`readlink -f v1`
+# if [ "v5" != "" ];then
+#  export KERNELDIR=`readlink -f v5`
 # fi
 
 RAMFS_TMP="/home/francesco/Crazy-Kernel/Kernel_cm/tmp_cm/ramfs"
 
-VER="\"-CrazySuperKernel_CM-v1\""
+VER="\"-CrazySuperKernel_CM-v5\""
 cp -f /home/francesco/Crazy-Kernel/Kernel_cm/arch/arm/configs/0crazykernel1_CM_defconfig /home/francesco/Crazy-Kernel/0crazykernel1_CM_defconfig
 sed "s#^CONFIG_LOCALVERSION=.*#CONFIG_LOCALVERSION=$VER#" /home/francesco/Crazy-Kernel/0crazykernel1_CM_defconfig > /home/francesco/Crazy-Kernel/Kernel_cm/arch/arm/configs/0crazykernel1_CM_defconfig
 
@@ -60,11 +60,11 @@ tools/mkbootimg --cmdline 'console=null androidboot.hardware=qcom user_debug=23 
 cd /home/francesco/Crazy-Kernel
 mv -f -v /home/francesco/Crazy-Kernel/Kernel_cm/boot.img /home/francesco/Crazy-Kernel/G900F_CrazySuperKernel_CM.CWM/boot.img
 cd /home/francesco/Crazy-Kernel/G900F_CrazySuperKernel_CM.CWM
-zip -r ../CrazySuperKernel_CM_v1_CWM.zip .
+zip -r ../CrazySuperKernel_CM_v5_CWM.zip .
 
-adb push /home/francesco/Crazy-Kernel/CrazySuperKernel_CM_v1_CWM.zip /storage/sdcard1/CrazySuperKernel_CM_${1}_CWM.zip
+adb push /home/francesco/Crazy-Kernel/CrazySuperKernel_CM_v5_CWM.zip /storage/sdcard1/CrazySuperKernel_CM_${1}_CWM.zip
 
-# adb push /home/francesco/Crazy-Kernel/CrazySuperKernel_CM_v1_CWM.zip /storage/sdcard1/update-crazysuperkernel.zip
+# adb push /home/francesco/Crazy-Kernel/CrazySuperKernel_CM_v5_CWM.zip /storage/sdcard1/update-crazysuperkernel.zip
 # 
 # adb shell su -c "echo 'boot-recovery ' > /cache/recovery/command"
 # adb shell su -c "echo '--update_package=/storage/sdcard0/update-crazysuperkernel.zip' >> /cache/recovery/command"
