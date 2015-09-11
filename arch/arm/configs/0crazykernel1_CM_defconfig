@@ -1,4 +1,4 @@
-CONFIG_LOCALVERSION="-CrazySuperKernel_CM-v6"
+CONFIG_LOCALVERSION="-CrazySuperKernel_CM-v7"
 # CONFIG_LOCALVERSION_AUTO is not set
 #
 # Crazy-Kernel1
